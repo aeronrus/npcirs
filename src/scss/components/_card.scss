@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  @media (max-width: 839px) {
+    position: static;
+  }
+
+  button {
+    text-align: center;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 23px;
+    background-color: rgb(255, 153, 0);
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+
+    @media (max-width: 839px) {
+      top: 10px;
+      left: 10px;
+    }
+    @media (max-width: 500px) {
+      width: 100px;
+      height: 30px;
+      font-size: 15px;
+    }
+  }
+  img {
+    max-width: 50%;
+    max-height: 10%;
+  }
+  .personal {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+}

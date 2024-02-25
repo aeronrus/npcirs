@@ -1,0 +1,49 @@
+@import './components/card.scss';
+@import './reset';
+
+body {
+  background-color: rgb(137, 131, 255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  width: calc(90vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+
+  @media (max-width: 839px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    width: calc(90vw - 10px);
+    margin: 10px auto;
+    font-size: 15px;
+    height: 70vh;
+  }
+}
+
+.content {
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+div[data-column-id='1'] {
+  text-align: center;
+  max-width: 40px;
+  margin-right: -40px;
+}
